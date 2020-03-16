@@ -1,7 +1,25 @@
 # coronaViz
 ## Data Visualization and Analytics of the COVID-19 Outbreak, the 2019 Novel Coronavirus COVID-19 (2019-nCoV)
 
+# করনা (কোভি-১৯)
+
 This is a simple data visualization project for the *2019 Novel Coronavirus* based on the Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
+
+<br>
+
+<b>Authors: </b><br>
+*  Hassan Sami Adnan
+*  Haque Ishfaq
+*  Atia Amin Oni
+*  Samara Sharmeen
+*  Hassan Saad Ifti
+<br><br>
+
+<b>Contact Us: </b><br>
+* Email: 
+<br><br>
+
+
 
 <br>
 
