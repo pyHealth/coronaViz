@@ -71,6 +71,6 @@ Creating basic plots using `ggplot2`.
 ```{r basic plots}
 #str(covid_confirmed)
 
-ggplot(data = covid_confirmed, aes(x=Country.Region, y=X1.22.20))
+#ggplot(data = covid_confirmed, aes(x=Country.Region, y=sum[,!1:4]))
 
 ```
