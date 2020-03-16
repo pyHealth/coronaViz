@@ -1,0 +1,76 @@
+---
+title: "COVID-19 Basic Visualization [BN]"
+author: "pyHealth"
+date: "3/16/2020"
+output:
+  html_document:
+    code_folding: show
+    highlight: breezedark
+    theme: darkly
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+  pdf_document:
+    toc: yes
+---
+
+### Authors
+
+*  Hassan Sami Adnan
+*  Haque Ishfaq
+*  Atia Amin Oni
+*  Samara Sharmeen
+*  Hassan Saad Ifti
+<br><br>
+
+<b>Contact Us: </b><br>
+Email: ai@pyhealth.xyz
+<br><br>
+
+# করোনাভাইরাস (কোভিড-১৯) ভিজুয়ালাইজেশন
+
+### Initialization
+
+Loading packages, auto installation if needed
+```{r load packages, results='hide', message=FALSE, warning=FALSE}
+# creating requiredPkg function for installing and loading necessary R packages.
+# checks if required packages are installed.
+# install if needed, then load into the R session.
+
+requiredPkg <- function(pkg){
+new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+sapply(pkg, require, character.only = TRUE)
+}
+
+# applying the function
+packages <- c("ggplot2", "qwraps2", "outbreaks", "plotly")
+requiredPkg(packages)
+
+```
+
+### Importing Data
+
+Importing data to the project from the Github Repository provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). For links to the sources, please refer to our readme.md page.
+```{r import data JHU CSSE}
+
+covid_confirmed <- read.csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv"))
+
+covid_deaths <- read.csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv"))
+
+covid_recovered <- read.csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv"))
+
+```
+
+
+### Basic Visualization
+
+Creating basic plots using `ggplot2`.
+```{r basic plots}
+#str(covid_confirmed)
+
+ggplot(data = covid_confirmed, aes(x=Country.Region, y=X1.22.20))
+
+```
