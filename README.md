@@ -41,6 +41,10 @@ https://systems.jhu.edu/research/public-health/ncov/
 
 <b>Authors: </b><br>
 *  Hassan Sami Adnan
+*  Haque Ishfaq
+*  Atia Amin Oni
+*  Samara Sharmeen
+*  Hassan Saad Ifti
 <br><br>
 
 <b>Contact Us: </b><br>
