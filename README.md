@@ -40,7 +40,7 @@ https://systems.jhu.edu/research/public-health/ncov/
 <br><br>
 
 <b>Authors: </b><br>
-*  
+*  Hassan Sami Adnan
 <br><br>
 
 <b>Contact Us: </b><br>
